@@ -1,5 +1,5 @@
 #!/bin/bash
-#Credits: TGYK
+#By TGYK
 
 #Script to use smartmontools to iterate over each disk in an array
 #behind a JMB39X SATA RAID/Port multiplier and report a very brief
