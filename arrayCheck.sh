@@ -5,7 +5,8 @@
 #behind a JMB39X SATA RAID/Port multiplier and report a very brief
 #health status. This script takes two configuration arguments: The
 #device as located within /dev, and the number of disks behind the
-#controller.
+#controller,  as  well  as  an  optional  "quiet success"  flag to
+#disable  output when  there are no errors present  on the  array.
 
 #Device string for the disk
 diskDev="/dev/sda"
