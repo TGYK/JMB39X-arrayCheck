@@ -10,7 +10,7 @@
 #Device string for the disk
 diskDev="/dev/sda"
 #Number of disks in the array
-arraySize=5
+arraySize=1
 #Set to true to disable output on success
 quietSuccess=FALSE
 
@@ -76,7 +76,7 @@ for raidDiskNo in $(seq 0 $arraySize); do
       bitComp=$((2**$i))
       #Compare return value to bitmask for bit, store result in variable (Will only ever return non-zero if bit is set)
       bitValue=$(($retStat & $bitComp))
-      #Check fir non-zero response from bit comparison
+      #Check for non-zero response from bit comparison
       if [ $bitValue -ne 0 ]; then
         #Set the relevant error message from error array
         errorMsg=${errorList[i]}
